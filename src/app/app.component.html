@@ -1,5 +1,5 @@
 <h1>Hello Angular {{ title }}</h1>
-<p>{{ data }}</p>
+<!-- <p>{{ data }}</p>
 <h3>{{ getValue() }}</h3>
 <h2>{{ 2 + 2 }}</h2>
 <app-user-list></app-user-list>
@@ -9,3 +9,46 @@
 <app-student-list></app-student-list>
 
 <app-country-list></app-country-list>
+
+<app-login></app-login>
+
+<button (click)="getClick()">Click Me</button>
+<br />
+<br />
+<br />
+
+<button (click)="getRandom(222)">Random</button>
+
+<br />
+<br />
+<br />
+
+<button (click)="getData('hello')">Get Data</button>
+
+<br />
+<br />
+
+<input type="text" #final (keydown)="getInputValue(final.value)" />
+
+<br />
+<br />
+<input
+  type="text"
+  #blur1
+  (blur)="getInputValue(blur1.value)"
+  placeholder="blur wala"
+/> -->
+
+<!-- <input type="text" #value2 />
+
+<br />
+
+<button (click)="getInputValue(value2.value)">Get the Value</button>
+
+<h3>{{ displayText }}</h3> -->
+
+<h3>Count :{{ count }}</h3>
+
+<button (click)="counter('add')">++</button><br /><br />
+
+<button (click)="counter('minus')">--</button>

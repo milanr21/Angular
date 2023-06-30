@@ -8,9 +8,17 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
 import { StudentListComponent } from './student-list/student-list.component';
 import { CountryListComponent } from './country-list/country-list.component';
 
+import { UserAuthModule } from './user-auth/user-auth.module';
+
 @NgModule({
-  declarations: [AppComponent, UserListComponent, CustomerListComponent, StudentListComponent, CountryListComponent],
-  imports: [BrowserModule],
+  declarations: [
+    AppComponent,
+    UserListComponent,
+    CustomerListComponent,
+    StudentListComponent,
+    CountryListComponent,
+  ],
+  imports: [BrowserModule, UserAuthModule],
   providers: [],
   bootstrap: [AppComponent],
 })
